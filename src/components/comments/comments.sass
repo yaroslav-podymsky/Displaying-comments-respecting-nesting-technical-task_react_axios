@@ -1,0 +1,56 @@
+.comments
+    margin: 52px auto 60px
+    width: 567px
+    display: flex
+    flex-direction: column
+    &__block
+        &-top
+            width: 100%
+            border-bottom: 0.2px solid #767676
+            display: flex
+            justify-content: space-between
+            padding-bottom: 8px
+            color: #FFFFFF
+            &-like
+                font-size: 15px
+                align-items: center
+                display: flex
+            &-img
+                width: 18px
+                height: 18px
+                margin-right: 10px
+
+        &-comments
+            margin-top: 32px
+            margin-bottom: 60px
+    &__button
+        cursor: pointer
+        width: 234px
+        height: 36px
+        background: #313439
+        backdrop-filter: blur(13.5px)
+        border-radius: 4px
+        border: none
+        color: #FFFFFF
+        font-size: 16px
+        margin: 0 auto
+        &:hover
+            background: #25272b
+        &:active
+            background: #3a3c3f
+@media screen and (max-width: 600px)
+    .comments
+        width: 100%
+        padding: 0 24px
+        margin: 32px auto 60px
+        &__block
+            &-top
+                font-size: 14px
+                &-like
+                    font-size: 14px
+                &-img
+                    width: 16px
+                    height: 16px
+            &-comments
+                margin-top: 24px
+                margin-bottom: 76px
